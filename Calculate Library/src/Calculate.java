@@ -87,11 +87,76 @@ String fin;
 			return fin;
 }
 
+public static Boolean isDivisibleBy (int number, int numbertwo) {
+
+double yesorno;
+yesorno=number%numbertwo;
+if(yesorno!=0) {
+	return false;
+}
+		else {
+	return true;
+ 
+}
+}
+
+public static double absValue (double number) {
+double abs;
+abs=number*number;
+abs=abs/number;
+return abs;
+}
+
+public static double max (double number, double numbertwo) {
+if (number>numbertwo) {
+	return number;
+}
+else {
+	return numbertwo;
+}
+}
+
+public static double max (double number, double numbertwo, double numberthree) {
+if (number>numbertwo) {
+	if (number>numberthree) {
+		return number;
+}
+		else if(numberthree>number) {
+			return numberthree;
+} 
+	if (numbertwo>numberthree) {
+				return numbertwo;
+}
+}
+}
+
+public static int min (int number, int numbertwo) {
+	if (number<numbertwo) {
+		return number;
+	}
+	else {
+		return numbertwo;
+}
+}
+
+
+public static double round2 (double number) {
+int start;
+double end;
+int en;
+double real;
+start=(int)number;
+end=number%1;
+end=end*100;
+en= (int)end;
+end=en/100;
+real=start+end;
+return real;
+
+}
 
 
 
 
 
 }
-
-
